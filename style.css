@@ -1,62 +1,79 @@
 *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            line-height: 1.6;
-        }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
 
-        .card {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-            padding: 24px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
 
-        .card h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #1a202c;
-        }
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #cbd5e0;
+}
 
-        .card p {
-            font-size: 1rem;
-            color: #4a5568;
-        }
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
+    font-weight: 700;
+}
 
+.card p.title {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
 
-        @media (min-width: 768px) {
-            .card {
-                padding: 32px;
-                max-width: 500px;
-            }
-            .card h1 {
-                font-size: 2.5rem;
-            }
-        }
+.card p.company, .card p.phone-number {
+    font-size: 1rem;
+    color: #718096;
+    margin-bottom: 0.25rem;
+}
 
-        @media (min-width: 1024px) {
-            .card {
-                padding: 40px;
-                max-width: 600px;
-            }
-            .card h1 {
-                font-size: 3rem;
-            }
-        }
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+    .card {
+        padding: 32px;
+        max-width: 500px;
+    }
+    .card h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        padding: 40px;
+        max-width: 600px;
+    }
+    .card h1 {
+        font-size: 3rem;
+    }
+}
