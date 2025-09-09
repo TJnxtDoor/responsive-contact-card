@@ -1,0 +1,88 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcefe7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20dvh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #f0f0f0; 
+}
+
+.contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-info h2 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.company-slogan {
+    font-style: italic;
+    color: #999;
+}
+
+
+@media (min-width: 768px) {
+    .contact-card {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .contact-info {
+         text-align: center;
+    }
+}
